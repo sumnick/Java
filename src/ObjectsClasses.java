@@ -1,12 +1,23 @@
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class ObjectsClasses {
+
     public static void main(String[] args) {
-        new Date();
-        System.out.println(new Date());
 
-        String s = new Date().toString();
 
-        System.out.println(s);
+        LocalDate.now();
+
+        System.out.println(LocalDate.now());
+
+
+
+
+
+      LocalDate.of(1982, 11, 9);
+
+        LocalDate newYearsEve = LocalDate.of(1982,11,9);
+        int year = newYearsEve.getYear();
+        System.out.println(year);
     }
 }
